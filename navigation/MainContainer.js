@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Feather from 'react-native-vector-icons/Feather';
-import Fontisto from 'react-native-vector-icons/Fontisto'; // Corrected import
+import Fontisto from 'react-native-vector-icons/Fontisto';
 
 // Screens
 import HomeScreen from './screens/HomeScreen';
@@ -37,8 +37,9 @@ function MainContainer() {
             
             if (iconName === 'database') {
               return <Feather name={iconName} size={size} color={color} />;
-            } else if (iconName === "pills") { // Corrected the condition
-              return <Fontisto name={iconName} size={size} color={color} />; // Corrected the component name and used iconName
+            } else if (iconName === "pills") { 
+              return <Fontisto name={iconName} size={size} color={color} />; 
+              
             }
             else {
               return <Ionicons name={iconName} size={size} color={color} />;
